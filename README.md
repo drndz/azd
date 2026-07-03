@@ -1,6 +1,6 @@
-# p03_azure_wrk
+# Azure Discovery project
 
-Lightweight Java project for testing Azure management APIs.
+AZD stands for Azure Discovery. This is a lightweight Java project for testing Azure management APIs.
 
 The current utility can:
 
