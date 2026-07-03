@@ -122,11 +122,7 @@ The script does not require Maven at runtime. It runs:
 java -cp "lib/*" org.qypp.AzureInfraTool
 ```
 
-The bundled runtime jars live in `lib/`.
-
-Maven is not used by the runtime scripts. The project keeps runtime dependencies bundled in `lib/`.
-
-The Maven `pom.xml` intentionally has no dependency declarations now. These former POM dependencies are bundled in `lib/` instead:
+The bundled runtime jars live in `lib/`. Maven is not used by this project; runtime dependencies are bundled in `lib/` instead:
 
 - `com.azure:azure-identity:1.18.4`
 - `com.azure.resourcemanager:azure-resourcemanager:2.62.0`
