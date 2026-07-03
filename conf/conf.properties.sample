@@ -1,0 +1,40 @@
+azure_secret_val=sample-secret-value-do-not-use
+azure_secret_id=00000000-0000-4000-8000-000000000001
+application_id=00000000-0000-4000-8000-000000000002
+
+# Required for Azure service principal authentication.
+# Azure portal: Microsoft Entra ID -> Overview -> Tenant ID.
+azure_tenant_id=00000000-0000-4000-8000-000000000003
+
+# Azure portal: Subscriptions -> select subscription -> Subscription ID.
+azure_subscription_id=00000000-0000-4000-8000-000000000004
+
+# Optional lightweight demo settings.
+azure_resource_group=p03-azure-wrk-rg
+azure_location=centralus
+azure_create_demo=false
+azure_delete_demo=false
+azure_full_lb_demo_recreate=false
+
+# Optional subscription budget alert. This creates/updates a monthly Cost budget.
+azure_budget_create=false
+azure_budget_name=p03-azure-wrk-budget
+azure_budget_amount_usd=5
+azure_budget_contact_email=you@example.com
+
+# Optional Traffic Manager demo. Cheap DNS-level routing, no VMs created here.
+azure_traffic_manager_create=false
+azure_traffic_manager_profile_name=p03-azure-wrk-tm
+azure_traffic_manager_dns_label=p03-azure-wrk-tm
+azure_traffic_manager_ttl_seconds=30
+azure_traffic_manager_monitor_port=80
+azure_traffic_manager_monitor_path=/
+azure_traffic_manager_external_ips=203.0.113.10,203.0.113.11
+
+# Full demo: Traffic Manager -> regional Azure Load Balancers -> Apache VMs.
+azure_full_lb_demo_vm_count=2
+azure_full_lb_demo_vm_size=Standard_F1als_v7
+azure_full_lb_demo_regions=eastus,eastus2
+azure_full_lb_demo_admin_username=azureuser
+azure_full_lb_demo_vnet_cidr=10.10.0.0/16
+azure_full_lb_demo_subnet_cidr=10.10.1.0/24
